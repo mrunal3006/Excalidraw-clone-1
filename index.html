@@ -4,32 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excalidraw</title>
-    <link rel="icon" href="https://docs.excalidraw.com/img/logo.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://db.onlinewebfonts.com/c/cc6ba99a1d8620c4bfc84d252404e42a?family=Virgil+3+YOFF" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Assets/logo.jpg" type="image/x-icon">
+   
 </head>
+
 <body>
-    <!-- nav bar -->
+    <!-- -----------nav-bar--------- -->
     <nav>
         <i class="fa-solid fa-bars" style="border: 1px solid #dadada;"></i>
-        <i class="fa-regular fa-user" style="color: white; background-color: blueviolet;"></i>
-
+        <div class="mid-nav">
+            <i class="fa-solid fa-lock-open"></i> 
+            <div class="vertical-line"></div> 
+            <i class="fa-regular fa-hand"></i>
+            <img src="Assets/square.png" width="17px" alt="square">
+            <i class="fa-solid fa-diamond"></i>
+            <i class="fa-regular fa-circle"></i>
+            <img src="Assets/right-arrow.png" width="17px" alt="right-arrow">
+            <i class="fa-solid fa-minus"></i>
+            <a href="pencil.html"><i class="fa-solid fa-pencil"></i></a>
+            <i class="fa-solid fa-a"></i>
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-solid fa-eraser"></i>
+            <div class="vertical-line"></div>
+            <img src="Assets/tool.png" width="17px" alt="">
+        </div>
+        <div id="lab-container">
+            <i class="fa-regular fa-user" style="color: white; background-color: blueviolet;"></i>
+            <div id="Library">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Library</span>
+            </div>
+        </div>
     </nav>
 
-    <!------hero section------->
+    <!-- -----hero-section------ -->
     <section id="hero-container">
         <div id="hero-body">
             <div id="logo-heading">
                 <img src="https://avatars.githubusercontent.com/u/59452120?v=4" id="overlayImage" width="50px">
                 <h1>EXCALIDRAW</h1>
-
             </div>
             <P id="text">All your data is saved locally in your browser.</P>
             <div class="Excalidraw-info bg-hover">
                 <i class="fa-regular fa-folder"></i>
-                <p>Open</p>
+                <div id="folder">
+                    <p>Open</p>
+                    <p>Ctrl+O</p>
+                </div>
             </div>
             <div class="Excalidraw-info bg-hover">
                 <i class="fa-regular fa-question" style=" border: 1px solid #c5c5c5;  border-radius: 50%;"></i>
